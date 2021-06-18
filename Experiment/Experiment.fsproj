@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Utils.fs" />
+    <Compile Include="Game.fs" />
+    <Compile Include="PlainUct.fs" />
+    <Compile Include="MaxUct.fs" />
+    <Compile Include="AlphaZero.fs" />
+    <Compile Include="AlphaZeroBasedSearch.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharpPlus" Version="1.1.7" />
+    <PackageReference Include="Microsoft.ML" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.5.5" />
+    <PackageReference Include="NLog" Version="4.7.8" />
+    <PackageReference Include="ShellProgressBar" Version="5.1.0" />
+    <PackageReference Include="YamlDotNet" Version="9.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+     <None Update="nlog.config" CopyToOutputDirectory="Always" />
+ </ItemGroup>
+</Project>
